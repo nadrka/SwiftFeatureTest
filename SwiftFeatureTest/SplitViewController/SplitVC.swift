@@ -16,6 +16,7 @@ final class SplitVC: UISplitViewController {
         detailsVC.view.backgroundColor = .lightGray
         detailsVC.view.backgroundColor = .gray
         detailsVC.view.backgroundColor = .red
+        detailsVC.view.backgroundColor = .yellow
         viewControllers = [nvc, UINavigationController(rootViewController: detailsVC)]
     }
     
