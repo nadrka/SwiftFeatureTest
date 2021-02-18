@@ -17,6 +17,15 @@ final class SplitVC: UISplitViewController {
         viewControllers = [nvc, UINavigationController(rootViewController: detailsVC)]
     }
     
+    private func setupView2() {
+        view.backgroundColor = .red
+        let menuVC = MenuController(style: .plain)
+        let nvc = UINavigationController(rootViewController: menuVC)
+        let detailsVC = DetailsViewController()
+        menuVC.delegate = detailsVC
+        detailsVC.view.backgroundColor = .lightGray
+        viewControllers = [nvc, UINavigationController(rootViewController: detailsVC)]
+    }
 }
 
 
